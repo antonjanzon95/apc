@@ -11,7 +11,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <main>Hello world</main>
+        <main
+          className="bg-cover bg-center h-screen z-[-1]"
+          style={{ backgroundImage: "url('/apc-biljard.jpg')" }}
+        >
+          <div className="bg-black h-screen bg-opacity-40 pt-16">
+            <div className="container mx-auto">
+              <h1 className="text-center text-2xl font-extrabold">
+                Välkommen till APC
+              </h1>
+              {/* <button className="absolute top-[50%] left-[50%] w-28 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded">
+                Bli medlem
+              </button>
+              <button className="absolute top-[50%] left-[20%] w-28 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded">
+                Kontaka oss
+              </button> */}
+            </div>
+          </div>
+        </main>
       </Layout>
     </>
   );
