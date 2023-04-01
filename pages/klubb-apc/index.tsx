@@ -1,7 +1,8 @@
+import Layout from "@/components/Layout";
 import React from "react";
 
 const KlubbAPC = () => {
-  return <div>KlubbAPC</div>;
+  return <Layout>KlubbAPC</Layout>;
 };
 
 export default KlubbAPC;

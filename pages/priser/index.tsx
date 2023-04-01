@@ -1,7 +1,8 @@
+import Layout from "@/components/Layout";
 import React from "react";
 
 const Priser = () => {
-  return <div>Priser</div>;
+  return <Layout>Priser</Layout>;
 };
 
 export default Priser;

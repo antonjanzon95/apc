@@ -1,7 +1,8 @@
+import Layout from "@/components/Layout";
 import React from "react";
 
 const Seriespel = () => {
-  return <div>Seriespel</div>;
+  return <Layout>Seriespel</Layout>;
 };
 
 export default Seriespel;
