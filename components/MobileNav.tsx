@@ -35,6 +35,7 @@ const MobileNav = () => {
                 width={36.33}
                 height={28}
                 alt="apc-logo"
+                className="h-auto"
               />
               Klubb APC
             </Link>

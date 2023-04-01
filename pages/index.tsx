@@ -1,5 +1,8 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
+import { GiTennisCourt } from "react-icons/gi";
+import { BsShop } from "react-icons/bs";
+import { FaHandshake } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -29,6 +32,49 @@ export default function Home() {
             </div>
           </div>
         </main>
+        <section className="w-screen flex flex-col laptop:flex-row bg-slate-100 text-slate-900">
+          <article className="w-screen flex flex-col justify-center items-center py-4 gap-4">
+            <div className="w-14 h-14 bg-red-600 rounded-[50%] flex justify-center items-center">
+              <GiTennisCourt color="white" size={28} />
+            </div>
+            <h2 className="text-2xl font-extrabold">Om hallen</h2>
+            <ul className="list-disc w-[225px]">
+              <li>14 meter i takhöjd</li>
+              <li>5 dubbelbanor</li>
+              <li>1 singelbana</li>
+              <li>Golfstudio</li>
+              <li>Utomhusbanor vid Avesta GK</li>
+            </ul>
+          </article>
+          <article className="w-screen flex flex-col justify-center items-center bg-slate-200 py-4 gap-4">
+            <div className="w-14 h-14 bg-red-600 rounded-[50%] flex justify-center items-center">
+              <BsShop color="white" size={28} />
+            </div>
+            <h2 className="text-2xl font-extrabold">Butik</h2>
+            <p>I vår butik hittar du en variation av olika varumärken</p>
+            <ul className="list-disc w-[225px]">
+              <li>Racket</li>
+              <li>Skor</li>
+              <li>Kläder</li>
+            </ul>
+          </article>
+          <article className="w-screen flex flex-col justify-center items-center py-4 gap-4">
+            <div className="w-14 h-14 bg-red-600 rounded-[50%] flex justify-center items-center">
+              <FaHandshake color="white" size={28} />
+            </div>
+            <h2 className="text-2xl font-extrabold">Medlemskap</h2>
+            <p>Medlemskapet kommer med en massa fördelar</p>
+            <ul className="list-disc w-[225px]">
+              <li>Gratis inträde i seriespel</li>
+              <li>Gratis inträde i sommarstegen</li>
+              <li>10% rabatt vid alla bokningar</li>
+              <li>APCs egna matchtröja (1 per år)</li>
+            </ul>
+            <button className="w-24 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded text-slate-100">
+              Bli medlem
+            </button>
+          </article>
+        </section>
       </Layout>
     </>
   );

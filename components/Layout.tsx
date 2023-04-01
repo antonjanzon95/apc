@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 import MobileHeader from "./MobileHeader";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 
 interface Props {
   children: ReactNode;
@@ -18,6 +19,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <section className="text-slate-100 bg-red-950 min-h-screen">
         {children}
       </section>
+      <Footer />
     </>
   );
 };

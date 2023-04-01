@@ -8,7 +8,7 @@ const Sidebar = () => {
         <a
           href="https://www.instagram.com/padelcenteravesta/?hl=en"
           target="_blank"
-          className="w-11 h-11 rounded-3xl laptop:rounded-xl laptop:hover:rounded-3xl transition ease-in-out duration-300 bg-gray-300 flex justify-center items-center"
+          className="w-11 h-11 bg-gray-300 rounded-3xl laptop:rounded-xl laptop:hover:rounded-3xl transition ease-in-out duration-300 flex justify-center items-center"
         >
           <AiFillInstagram size={35} color="purple" />
         </a>
