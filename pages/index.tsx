@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </main>
         <section className="w-screen flex flex-col laptop:flex-row bg-slate-100 text-slate-900">
-          <article className="w-screen flex flex-col justify-center items-center py-4 gap-4">
+          <article className="w-screen flex flex-col justify-center items-center p-4 gap-4">
             <div className="w-14 h-14 bg-red-600 rounded-[50%] flex justify-center items-center">
               <GiTennisCourt color="white" size={28} />
             </div>
@@ -46,19 +46,21 @@ export default function Home() {
               <li>Utomhusbanor vid Avesta GK</li>
             </ul>
           </article>
-          <article className="w-screen flex flex-col justify-center items-center bg-slate-200 py-4 gap-4">
+          <article className="w-screen flex flex-col justify-center items-center bg-slate-200 p-4 gap-4">
             <div className="w-14 h-14 bg-red-600 rounded-[50%] flex justify-center items-center">
               <BsShop color="white" size={28} />
             </div>
             <h2 className="text-2xl font-extrabold">Butik</h2>
-            <p>I vår butik hittar du en variation av olika varumärken</p>
+            <p className="text-center">
+              I vår butik hittar du en variation av olika varumärken
+            </p>
             <ul className="list-disc w-[225px]">
               <li>Racket</li>
               <li>Skor</li>
               <li>Kläder</li>
             </ul>
           </article>
-          <article className="w-screen flex flex-col justify-center items-center py-4 gap-4">
+          <article className="w-screen flex flex-col justify-center items-center p-4 gap-4">
             <div className="w-14 h-14 bg-red-600 rounded-[50%] flex justify-center items-center">
               <FaHandshake color="white" size={28} />
             </div>

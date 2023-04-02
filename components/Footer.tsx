@@ -53,17 +53,17 @@ const Footer = () => {
       <div className="py-8 flex">
         <Image
           src={"/selek-logo.jpg"}
-          height={200}
-          width={200}
+          height={100}
+          width={150}
           alt="Selek logo"
-          className="w-auto"
+          className="block object-contain h-auto"
         />
         <Image
-          src={"/byggmax-logo.webp"}
-          height={200}
-          width={200}
+          src={"/byggmax-logo.png"}
+          height={100}
+          width={150}
           alt="Byggmax logo"
-          className=""
+          className="block object-contain h-auto"
         />
       </div>
     </footer>
