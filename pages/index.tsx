@@ -3,6 +3,7 @@ import Head from "next/head";
 import { GiTennisCourt } from "react-icons/gi";
 import { BsShop } from "react-icons/bs";
 import { FaHandshake } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -75,6 +76,45 @@ export default function Home() {
             <button className="w-24 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded text-slate-100">
               Bli medlem
             </button>
+          </article>
+        </section>
+        <section className="w-screen flex flex-col laptop:flex-row bg-red-900 text-slate-100 items-center text-center">
+          <article className="w-full flex flex-col items-center py-6 px-4">
+            <h2 className="text-2xl font-extrabold">Golfstudio</h2>
+            <p className="mb-4 h-12">Bokas som vanligt i MATCHi</p>
+
+            <Image
+              src={"/Golfstudio.jpg"}
+              width={300}
+              height={300}
+              alt="golfstudio"
+              className="rounded-xl"
+            />
+          </article>
+          <article className="w-full bg-red-800 flex flex-col items-center py-6 px-4">
+            <h2 className="text-2xl font-extrabold">Café</h2>
+            <p className="mb-4 h-12">Hungrig? Ingen fara, vi har tilltugg.</p>
+
+            <Image
+              src={"/Pizza.jpg"}
+              width={300}
+              height={300}
+              alt="pizza"
+              className="rounded-xl"
+            />
+          </article>
+          <article className="w-full flex flex-col items-center py-6 px-4">
+            <h2 className="text-2xl font-extrabold">Aktiviteter</h2>
+            <p className="mb-4">
+              Håll utkik på MATCHi då vi frekvent lägger ut olika aktiviteter!
+            </p>
+            <Image
+              src={"/Frukostpadel.png"}
+              width={300}
+              height={300}
+              alt="frukostpadel"
+              className="rounded-xl"
+            />
           </article>
         </section>
       </Layout>
