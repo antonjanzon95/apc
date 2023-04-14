@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -10,7 +9,7 @@ const Footer = () => {
         <div className="w-1/2 px-2 flex flex-col gap-2">
           <h2 className="text-xl font-bold">Länkar</h2>
           <ul className="flex flex-col gap-1">
-            <li>
+            <li className="hover:underline">
               <a
                 href="https://www.instagram.com/padelcenteravesta/?hl=en"
                 target="_blank"
@@ -18,7 +17,7 @@ const Footer = () => {
                 Instagram
               </a>
             </li>
-            <li>
+            <li className="hover:underline">
               <a
                 href="https://www.facebook.com/people/Avesta-Padelcenter/100063650646899/"
                 target="_blank"
@@ -26,10 +25,10 @@ const Footer = () => {
                 Facebook
               </a>
             </li>
-            <li>
+            <li className="hover:underline">
               <Link href="/kontakt">Kontakta oss</Link>
             </li>
-            <li>
+            <li className="hover:underline">
               <a
                 href="https://www.matchi.se/facilities/avestapadelcenter"
                 target="_blank"
@@ -44,26 +43,48 @@ const Footer = () => {
           <a
             href="https://www.google.com/maps/place/Avesta+Padel+Center/@60.1470291,16.186314,17z/data=!3m1!4b1!4m6!3m5!1s0x465de5c86718e7cd:0x49b969fcc8c552aa!8m2!3d60.1470264!4d16.1885027!16s%2Fg%2F11jjk6vf75"
             target="_blank"
+            className="hover:underline"
           >
             Modellvägen 8 <br />
             77441 Avesta
           </a>
         </div>
       </div>
-      <div className="py-8 flex">
+      <div className="px-4 py-8 flex flex-wrap gap-2">
         <Image
-          src={"/selek-logo.jpg"}
+          src={"/selek-logo.png"}
           height={100}
           width={150}
           alt="Selek logo"
-          className="block object-contain h-auto"
+          className="block object-contain w-auto"
         />
         <Image
           src={"/byggmax-logo.png"}
           height={100}
           width={150}
           alt="Byggmax logo"
-          className="block object-contain h-auto"
+          className="block object-contain w-auto"
+        />
+        <Image
+          src={"/ica-logo.png"}
+          height={100}
+          width={150}
+          alt="Byggmax logo"
+          className="block object-contain w-auto"
+        />
+        <Image
+          src={"/vastanhede-logo.png"}
+          height={100}
+          width={150}
+          alt="Byggmax logo"
+          className="block object-contain w-auto"
+        />
+        <Image
+          src={"/zedendahladvokatbyra.png"}
+          height={100}
+          width={150}
+          alt="Byggmax logo"
+          className="block object-contain w-auto"
         />
       </div>
     </footer>

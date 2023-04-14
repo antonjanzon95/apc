@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import LoginBtn from "./LoginBtn";
 
 const MobileHeader = () => {
   return (
@@ -11,6 +12,8 @@ const MobileHeader = () => {
         alt="header-logo"
         className="h-auto"
       />
+
+      <LoginBtn />
 
       <button className="w-24 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded">
         Bli medlem
