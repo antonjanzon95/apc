@@ -1,8 +1,11 @@
 import NextAuth from "next-auth";
 import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
 import clientPromise from "../../lib/mongodb";
+// import connectDB from "@/pages/lib/connectdb";
 import EmailProvider from "next-auth/providers/email";
 import FacebookProvider from "next-auth/providers/facebook";
+
+// connectDB();
 
 export default NextAuth({
   secret: process.env.NEXTAUTH_SECRET,

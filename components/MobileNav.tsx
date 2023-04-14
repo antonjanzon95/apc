@@ -9,7 +9,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <nav className="laptop:hidden w-screen fixed bottom-0 h-20 text-slate-100 flex items-center justify-center bg-red-700">
+      <nav className="laptop:hidden w-screen fixed bottom-0 h-20 text-slate-100 flex items-center justify-center bg-gradient-to-b from-red-700 to-red-950">
         <ul className="flex items-center w-full h-full">
           <li className="w-1/4">
             <Link href={"/"} className={linkStyle}>
