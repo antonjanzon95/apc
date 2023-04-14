@@ -85,7 +85,7 @@ export default function Home() {
             </ul>
             <Link
               href={`/medlemskap`}
-              className="w-24 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded text-slate-100"
+              className="btn border-none shadow-xl bg-gradient-to-r from-red-700 to-red-600"
             >
               Bli medlem
             </Link>

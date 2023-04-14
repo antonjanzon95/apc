@@ -32,7 +32,10 @@ export default function Component() {
         </div>
       ) : (
         <div>
-          <button onClick={() => signIn()} className="btn">
+          <button
+            onClick={() => signIn()}
+            className="btn bg-gradient-to-r from-red-700 to-red-800 border-none"
+          >
             Logga in
           </button>
         </div>
