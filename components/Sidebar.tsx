@@ -4,7 +4,7 @@ import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 const Sidebar = () => {
   return (
     <>
-      <div className="fixed h-screen right-0 w-14 flex flex-col items-center justify-center gap-4">
+      <div className="hidden laptop:flex fixed h-screen right-0 w-14 flex-col items-center justify-center gap-4">
         <a
           href="https://www.instagram.com/padelcenteravesta/?hl=en"
           target="_blank"

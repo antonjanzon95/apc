@@ -4,12 +4,12 @@ import React from "react";
 const Priser = () => {
   return (
     <Layout>
-      <section className="pt-20 p-6">
+      <section className="pt-20 p-6 flex flex-col justify-center gap-6">
         <h1 className="text-center font-extrabold text-3xl">
           Bokning & Priser
         </h1>
         <article>
-          <h2 className="text-xl font-bold">Bokning</h2>
+          <h2 className="text-xl font-bold mb-2">Bokning</h2>
           <ul>
             <li>
               Boka via{" "}
@@ -32,7 +32,7 @@ const Priser = () => {
           </ul>
         </article>
         <article>
-          <h2 className="text-xl font-bold">Våra priser</h2>
+          <h2 className="text-xl font-bold mb-2">Våra priser</h2>
           <p>
             Padel blir dyrt i längden och vi vill att alla ska kunna spela, från
             barn till pensionärer. Därför har vi nyligen pressat ner våra

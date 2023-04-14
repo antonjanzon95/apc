@@ -16,7 +16,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <MobileHeader />
       <Sidebar />
       <MobileNav />
-      <section className="text-slate-100 bg-red-950 min-h-screen">
+      <section className="text-slate-100 bg-gradient-to-r from-red-950 to-red-900 min-h-screen">
         {children}
       </section>
       <Footer />
