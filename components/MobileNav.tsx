@@ -29,7 +29,7 @@ const MobileNav = () => {
             </Link>
           </li>
           <li className="w-1/4">
-            <Link href={"/klubb-apc"} className={linkStyle}>
+            <Link href={"/medlemskap"} className={linkStyle}>
               <Image
                 src={"/apc-logo.png"}
                 width={36.33}
@@ -37,7 +37,7 @@ const MobileNav = () => {
                 alt="apc-logo"
                 className="h-auto"
               />
-              Klubb APC
+              Klubb-APC
             </Link>
           </li>
         </ul>

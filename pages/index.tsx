@@ -4,8 +4,12 @@ import { GiTennisCourt } from "react-icons/gi";
 import { BsShop } from "react-icons/bs";
 import { FaHandshake } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 export default function Home() {
+  const { data: session } = useSession();
+
   return (
     <>
       <Head>
@@ -21,9 +25,15 @@ export default function Home() {
         >
           <div className="bg-black h-screen bg-opacity-40 pt-16">
             <div className="container mx-auto">
-              <h1 className="text-center text-2xl font-extrabold">
-                Välkommen till APC
-              </h1>
+              {session ? (
+                <h1 className="text-center text-2xl font-extrabold">
+                  Välkommen {session.user?.name}!
+                </h1>
+              ) : (
+                <h1 className="text-center text-2xl font-extrabold">
+                  Välkommen till APC
+                </h1>
+              )}
               {/* <button className="absolute top-[50%] left-[50%] w-28 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded">
                 Bli medlem
               </button>
@@ -68,14 +78,17 @@ export default function Home() {
             <h2 className="text-2xl font-extrabold">Medlemskap</h2>
             <p>Medlemskapet kommer med en massa fördelar</p>
             <ul className="list-disc w-[225px]">
-              <li>Gratis inträde i seriespel</li>
-              <li>Gratis inträde i sommarstegen</li>
+              <li>Gratis inträde i seriespelet och sommarstegen</li>
+              <li>Boka tider 3 veckor i förtid (icke-medlem är 2)</li>
               <li>10% rabatt vid alla bokningar</li>
-              <li>APCs egna matchtröja (1 per år)</li>
+              <li>APC t-shirt (1 per år)</li>
             </ul>
-            <button className="w-24 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded text-slate-100">
+            <Link
+              href={`/medlemskap`}
+              className="w-24 h-10 bg-gradient-to-r from-red-700 to-red-600 rounded text-slate-100"
+            >
               Bli medlem
-            </button>
+            </Link>
           </article>
         </section>
         <section className="w-screen flex flex-col laptop:flex-row bg-red-900 text-slate-100 items-center text-center">
