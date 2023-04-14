@@ -9,9 +9,9 @@ const Seriespel = () => {
         <h1 className="text-center font-extrabold text-3xl">Seriespel</h1>
 
         <article className="flex flex-col gap-2">
-          <h2 className="text-xl font-bold">När?</h2>
+          <h2 className="text-xl font-bold">När</h2>
           <p>
-            Seriespelet pågår under höst- och vårsäsongerna, och under sommaren
+            Seriespelet pågår under höst- och vårsäsongen, och under sommaren
             kör vi{" "}
             <Link href={`/sommarstegen`} className="font-bold">
               Sommarstegen.
@@ -20,7 +20,7 @@ const Seriespel = () => {
         </article>
 
         <article className="flex flex-col gap-2">
-          <h2 className="text-xl font-bold">Kostnad?</h2>
+          <h2 className="text-xl font-bold">Kostnad</h2>
           <p>
             Som{" "}
             <Link href={`/medlemskap`} className="font-bold">
@@ -37,11 +37,21 @@ const Seriespel = () => {
           </Link>
         </article>
 
-        <ul className="flex gap-4 justify-center items-center">
-          <li className="btn bg-gradient-to-r from-slate-800 to-slate-700 border-none shadow-xl">
+        <article className="flex flex-col gap-2">
+          <h2 className="text-xl font-bold">Plats</h2>
+          <p>
+            <span className="font-semibold">Avesta Padelcenter</span> <br />
+            Matcherna ska spelas på APC:s inne eller utomhusbanor för att
+            godkännas i seriespelet. Deltagare i seriespelet kommer att kunna
+            boka tider upp till 3 veckor i förväg (normalt är 2 veckor).
+          </p>
+        </article>
+
+        <ul className="flex gap-4 justify-around items-center">
+          <li className="btn bg-gradient-to-r from-red-800 to-red-700 border-none shadow-xl">
             <Link href={`/seriespel/registrering`}>Registrering</Link>
           </li>
-          <li className="btn bg-gradient-to-r from-slate-700 to-slate-800 border-none shadow-xl">
+          <li className="btn bg-gradient-to-r from-red-700 to-red-800 border-none shadow-xl">
             <Link href={`/seriespel/regler`}>Regler</Link>
           </li>
         </ul>
